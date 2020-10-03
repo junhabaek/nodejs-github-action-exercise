@@ -1,0 +1,28 @@
+{
+  "name": "nodejs_github_action_exercise",
+  "version": "1.0.0",
+  "description": "github action을 통해, nodejs 서버의 docker instance를 생성하고, aws 서버에 업로드 해본다.",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junhabaek/nodejs-github-action-exercise.git"
+  },
+  "author": "junha baek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junhabaek/nodejs-github-action-exercise/issues"
+  },
+  "homepage": "https://github.com/junhabaek/nodejs-github-action-exercise#readme",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3"
+  }
+}

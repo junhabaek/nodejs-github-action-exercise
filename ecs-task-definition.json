@@ -1,0 +1,32 @@
+{
+  "family": "anmul-t",
+  "executionRoleArn": "arn:aws:iam::022734986866:role/ecsTaskExecutionRole",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [
+    {
+      "name": "anmul-t",
+      "image": "022734986866.dkr.ecr.ap-northeast-2.amazonaws.com/anmul-t:latest",
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "hostPort": 3000,
+          "protocol": "tcp"
+        }
+      ],
+      "logConfiguration":{
+        "logDriver":"awslogs",
+        "options":{
+          "awslogs-group":"anmul-t",
+          "awslogs-region":"ap-northeast-2",
+          "awslogs-stream-prefix":"ecs"
+        }
+      },
+      "essential": true
+    }
+  ],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "512",
+  "memory": "1024"
+}

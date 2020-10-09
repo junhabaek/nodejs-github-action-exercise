@@ -2,11 +2,11 @@
   "family": "andang",
   "executionRoleArn": "arn:aws:iam::022734986866:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
-  "memoryReservation" : 900,
   "containerDefinitions": [
     {
       "name": "andang",
       "image": "022734986866.dkr.ecr.ap-northeast-2.amazonaws.com/andang/resource-server:latest",
+      "memoryReservation" : 850,
       "portMappings": [
         {
           "containerPort": 3000,

@@ -14,14 +14,6 @@
           "protocol": "tcp"
         }
       ],
-      "logConfiguration":{
-        "logDriver":"awslogs",
-        "options":{
-          "awslogs-group":"andang",
-          "awslogs-region":"ap-northeast-2",
-          "awslogs-stream-prefix":"ecs"
-        }
-      },
       "essential": true
     }
   ],

@@ -2,6 +2,7 @@
   "family": "andang",
   "executionRoleArn": "arn:aws:iam::022734986866:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
+  "memoryReservation" : 900,
   "containerDefinitions": [
     {
       "name": "andang",

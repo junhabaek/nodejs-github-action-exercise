@@ -1,11 +1,11 @@
 {
-  "family": "anmul-t",
+  "family": "andang",
   "executionRoleArn": "arn:aws:iam::022734986866:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
   "containerDefinitions": [
     {
-      "name": "anmul-t",
-      "image": "022734986866.dkr.ecr.ap-northeast-2.amazonaws.com/anmul-t:latest",
+      "name": "andang",
+      "image": "022734986866.dkr.ecr.ap-northeast-2.amazonaws.com/andang/resource-server:latest",
       "portMappings": [
         {
           "containerPort": 3000,
@@ -16,7 +16,7 @@
       "logConfiguration":{
         "logDriver":"awslogs",
         "options":{
-          "awslogs-group":"anmul-t",
+          "awslogs-group":"andang",
           "awslogs-region":"ap-northeast-2",
           "awslogs-stream-prefix":"ecs"
         }
@@ -25,7 +25,7 @@
     }
   ],
   "requiresCompatibilities": [
-    "FARGATE"
+    "EC2"
   ],
   "cpu": "512",
   "memory": "1024"
